@@ -1,0 +1,8 @@
+---
+
+- name: execute headless install
+  package_facts:
+    command: ./headlessprocess.py
+    args:
+      chdir: "{{ role_path }}/templates/pythonimager"
+...

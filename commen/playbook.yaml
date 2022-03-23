@@ -1,0 +1,7 @@
+---
+
+- hosts: "{{ server_host }}"
+  roles:
+    - role: SetupFolderAndInstalls
+
+...

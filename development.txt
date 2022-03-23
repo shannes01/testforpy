@@ -1,0 +1,2 @@
+[testserver]
+10.3.27.196 ansible_user=Senneubuntudesktop
