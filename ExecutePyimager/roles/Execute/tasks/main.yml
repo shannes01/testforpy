@@ -2,11 +2,11 @@
 
 - name: execute headless script
   script: headlessprocess.py
-  when: process == headless
+  when: process == "headless"
 
 
 - name: execute full script
   script: ../templates/fullprocess.py
-  when: process == full
+  when: process == "full"
 
 ...
