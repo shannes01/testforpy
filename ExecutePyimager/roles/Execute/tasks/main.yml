@@ -2,7 +2,7 @@
 
 - name: execute headless script
   script: headlessprocess.py
-  when: "{{ process }} == 'headless'"
+  when: process == headless
 
 
 - name: execute full script
