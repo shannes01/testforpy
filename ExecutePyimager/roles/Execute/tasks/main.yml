@@ -9,7 +9,7 @@
   when: process == "full"
 
 - name: execute test script
-  command: python3 Home/Desktop/project2/testforpy/ExecutePyimager/roles/Execute/templates/testscript.py
+  command: python3 home/senne/Desktop/project2/testforpy/ExecutePyimager/roles/Execute/templates/testscript.py
 
 
 
