@@ -1,7 +1,7 @@
 ---
 
 - name: execute headless script
-  script: headlessprocess.py
+  script: ../templates/headlessprocess.py
   when: process == "headless"
 
 
