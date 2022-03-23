@@ -5,11 +5,11 @@
   when: process == "headless"
 
 - name: execute full script
-  script: ../templates/fullprocess.py
+  script: templates/fullprocess.py
   when: process == "full"
 
 - name: execute test script
-  command: python3 ../templates/testscript.py
+  command: python3 ~/Desktop/project2/testforpy/ExecutePyimager/roles/Execute/templates/testscript.py
 
 
 
