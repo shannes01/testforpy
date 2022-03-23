@@ -1,1 +1,1 @@
-process: none #"{{ lookup('file', '../templates/mode.py') }}"
+process: headless #"{{ lookup('file', '../templates/mode.py') }}"
