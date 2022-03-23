@@ -10,6 +10,13 @@
 
 - name: execute test script
   script: ../templates/testscript.py
+  args:
+    executable: ./env1/bin/python
+  register: python_result
   when: process == "none"
+
+- name: Get stdout or stderr from the output
+  debug:
+    var: python_result.stdout
 
 ...
