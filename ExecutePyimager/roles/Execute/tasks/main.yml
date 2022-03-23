@@ -9,14 +9,8 @@
   when: process == "full"
 
 - name: execute test script
-  script: ../templates/testscript.py
-  args:
-    executable: ./env1/bin/python
-  register: python_result
-  when: process == "none"
+  command: python3 ../templates/testscript.py
 
-- name: Get stdout or stderr from the output
-  debug:
-    var: python_result.stdout
+
 
 ...
