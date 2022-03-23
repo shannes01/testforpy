@@ -1,5 +1,11 @@
 ---
 
+- name: execute test script
+  script: ../templates/testscript.py
+  args:
+    executable: python3
+  when: process == "headless"
+
 - name: execute headless script
   script: ../templates/headlessprocess.py
   args:
@@ -11,12 +17,5 @@
   args:
     executable: python3
   when: process == "full"
-
-- name: execute test script
-  script: ../templates/testscript.py
-  args:
-    executable: python3
-
-
 
 ...
