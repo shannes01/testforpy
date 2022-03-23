@@ -1,12 +1,12 @@
 ---
 
 - name: execute headless script
-  script: commen/roles/Execute/templates/headlessprocess.py
+  script: ../templates/headlessprocess.py
   when: process == "headless"
 
 
 - name: execute full script
-  script: commen/roles/Execute/templates/fullprocess.py
+  script: ../templates/fullprocess.py
   when: process == "full"
 
 ...
