@@ -7,6 +7,6 @@
 
 - name: execute full script
   script: ../templates/fullprocess.py
-  when: "{{ process }} == 'full'"
+  when: process == full
 
 ...
