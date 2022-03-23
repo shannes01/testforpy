@@ -1,0 +1,17 @@
+---
+
+- name: find templates
+  find:
+    paths: /Execute
+    file_type: directory
+
+- name: execute headless script
+  script: ../templates/headlessprocess.py
+  when: process == "headless"
+
+
+- name: execute full script
+  script: ../templates/fullprocess.py
+  when: process == "full"
+
+...
