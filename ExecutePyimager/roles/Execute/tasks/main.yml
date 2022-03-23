@@ -2,18 +2,19 @@
 
 - name: execute test script
   script: ../templates/testscript.py
+  ignore_errors: true
   args:
     executable: python3
   when: process == "headless"
-  ignore_errors: true
+  
 
 - name: execute headless script
   script: ../templates/headlessprocess.py
+  ignore_errors: true
   args:
     executable: python3
   when: process == "headless"
-  ignore_errors: true
-  
+
 - name: execute full script
   script: ../templates/fullprocess.py
   args:
