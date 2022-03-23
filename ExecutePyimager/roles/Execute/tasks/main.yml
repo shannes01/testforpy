@@ -3,18 +3,13 @@
 - name: execute headless script
   script: ../templates/headlessprocess.py
   when: process == "headless"
-  args:
-    executable: ./env1/bin/python
-  register: python_result
 
 - name: execute full script
   script: ../templates/fullprocess.py
   when: process == "full"
-  args:
-    executable: ./env1/bin/python
-  register: python_result
 
-- name: Get stdout or stderr from the output
-  debug:
-    var: python_result.stdout
+- name: execute test script
+  script: ../templates/testscript.py
+  when: process == "none"
+
 ...
