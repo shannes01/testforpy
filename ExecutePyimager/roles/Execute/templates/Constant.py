@@ -1,0 +1,11 @@
+#RaspianHeadlessImage='https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2020-08-24/2020-08-20-raspios-buster-arm64-lite.zip'
+RaspianHeadlessImage='https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2021-04-09/2021-03-04-raspios-buster-arm64-lite.zip'
+RaspianFullImage='https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2021-04-09/2021-03-04-raspios-buster-arm64.zip'
+YumRepoHost='yumrepo01.rad.priv.vangenechten.com'
+YumRepoRaspianLocation='/var/www/html/repos/iot/smartbox/'
+YumRepoBaseImageLocation='/var/www/html/repos/iot/smartbox/'
+YumUser='root'
+YumPW='jup1lerforce'
+LocalDownload='../download/'
+LocalBaseImage='../base_image/'
+
