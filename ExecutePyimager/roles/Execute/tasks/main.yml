@@ -1,7 +1,8 @@
 ---
 
 - name: execute full script
-  script: python3 ExecutePyimager/roles/Execute/templates/imager.py {{ optie1|lower }} {{ optie2|lower }}
+  script: 
+    cmd: python3 ExecutePyimager/roles/Execute/templates/imager.py {{ optie1|lower }} {{ optie2|lower }}
   when: 
     - optie1 == "h" or optie1 == "f" or optie1 == "s" or optie1 == "H" or optie1 == "F" or optie1 == "S"
     - optie2 == "r" or optie2 == "i" or optie2 == "R" or optie2 == "I"
