@@ -4,7 +4,7 @@
   become: true
   ignore_errors: true
   roles:
-    - role: commen/roles/SetupFolderAndInstalls
+    #- role: commen/roles/SetupFolderAndInstalls
     - role: ExecutePyimager/roles/Execute
     #- role: commen/roles/TestRole
     
