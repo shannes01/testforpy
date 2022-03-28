@@ -1,9 +1,4 @@
-vars_prompt:
-  - name: optie1
-    prompt: What type do you want \n h(headless) \n f(full) \n s(showroom))?
-    private: no
-
-  - name: optie2
-    prompt: from Where do you want to download it(i(internet),r(repository))?
-    private: no
+optie1: h
+optie2: i
+    
 
