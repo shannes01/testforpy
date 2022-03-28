@@ -9,4 +9,7 @@
 
 - name: execute full script
   command: python3 /home/brent/TestForAnsibleImager/testforpy/ExecutePyimager/roles/Execute/templates/imager.py h i 
+
+- debug: text
+  msg: "hello"
 ...
