@@ -1,0 +1,10 @@
+---
+
+- name: do stuff
+  debug:
+    msg: "hallo {{ world|lower }} {{ var1|lower}}!!!"
+  when: 
+    - world == "h" or world == "f" or world == "s" or world == "H" or world == "F" or world == "S"
+    - var1 == "r" or var1 == "i" or var1 == "R" or var1 == "I"
+
+...

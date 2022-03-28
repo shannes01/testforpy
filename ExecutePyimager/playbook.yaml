@@ -2,6 +2,6 @@
 
 - hosts: "{{ server_host }}"
   roles:
-    - role: GitDawnload
+    - role: Execute
 
 ...

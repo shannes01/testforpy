@@ -1,24 +1,9 @@
 ---
 
-- name: execute test script
-  script: ../templates/testscript.py
-  ignore_errors: true
-  args:
-    executable: python3
-  when: process == "headless"
-  
-
-- name: execute headless script
-  script: ../templates/headlessprocess.py
-  ignore_errors: true
-  args:
-    executable: python3
-  when: process == "headless"
-
 - name: execute full script
-  script: ../templates/fullprocess.py
-  args:
-    executable: python3
-  when: process == "full"
-
+  shell:
+    command: python3 imager.py {{ optie1|lower }} {{ optie2|lower }}
+  when: 
+    - optie1 == "h" or optie1 == "f" or optie1 == "s" or optie1 == "H" or optie1 == "F" or optie1 == "S"
+    - optie2 == "r" or optie2 == "i" or optie2 == "R" or optie2 == "I"
 ...

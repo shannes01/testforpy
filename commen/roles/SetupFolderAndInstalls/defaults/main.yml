@@ -1,3 +1,5 @@
 LocalBaseImage: "../base_image/"
 LocalDownload: "../download/"
-installs: [qemu,qemu-user-static,binfmt-support,kpartx,sshpass,openssl,shellinabox]
+installsapt: [qemu,qemu-user-static,binfmt-support,kpartx,sshpass,openssl,shellinabox]
+installspip: [pysftp,pick,progress,tqdm,paramiko]
+

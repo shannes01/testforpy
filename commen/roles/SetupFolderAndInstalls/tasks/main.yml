@@ -4,22 +4,18 @@
   package_facts:
     manager: "auto"
 
-- name: create supporting directories
-  file:
-    path: "{{LocalBaseImage}}"
-    state: directory
-
-- name: create supporting directories
-  file:
-    path: "{{LocalDownload}}"
-    state: directory
-
 - name: install using loop
   apt:
     name: "{{item}}"
     state: latest
   when: "'{{ item }}' not in ansible_facts.packages"
-  loop: "{{installs}}"
+  loop: "{{installsapt}}"
+
+- name: install using loop pip
+  pip:
+    name: "{{item}}"
+    state: latest
+  loop: "{{installspip}}"
   
 
 ...
