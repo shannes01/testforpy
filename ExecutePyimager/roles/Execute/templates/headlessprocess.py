@@ -70,8 +70,8 @@ class headlessprocess:
         print(f"{bcolors.WARNING}\nExit Chroot\n{bcolors.ENDC}")
 
         print(f"{bcolors.WARNING}\nSending img files from local to Yum Repo Server\n{bcolors.ENDC}")
-        upload.uploadParamikoSftp(Constant.LocalBaseImage, Constant.YumRepoBaseImageLocation, True, targetName,
-                                  copyName)
+        #upload.uploadParamikoSftp(Constant.LocalBaseImage, Constant.YumRepoBaseImageLocation, True, targetName,
+                                  #copyName)
 
         print(f"{bcolors.WARNING}\nHeadless mode finished processing\n{bcolors.ENDC}")
         sys.exit("Finished")
