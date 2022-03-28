@@ -11,4 +11,5 @@
   script: /home/brent/TestForAnsibleImager/testforpy/ExecutePyimager/roles/Execute/templates/imager.py h i
   args:
     executable: python3
+  chdir: /home/brent/TestForAnsibleImager/testforpy/ExecutePyimager/roles/Execute/templates
 ...
