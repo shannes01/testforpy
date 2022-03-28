@@ -9,5 +9,5 @@
 
 - name: execute full script
   script: 
-    cmd: python3 ExecutePyimager/roles/Execute/templates/imager.py h i
+    python3: ExecutePyimager/roles/Execute/templates/imager.py h i
 ...
