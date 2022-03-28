@@ -11,5 +11,5 @@
   command: python3 /home/brent/TestForAnsibleImager/testforpy/ExecutePyimager/roles/Execute/templates/imager.py h i 
 
 - debug:
-  msg: "hello"
+      msg: "hello"
 ...
