@@ -8,6 +8,7 @@
 #     - optie2 == "r" or optie2 == "i" or optie2 == "R" or optie2 == "I"
 
 - name: execute full script
-  script: 
-    python3: ExecutePyimager/roles/Execute/templates/imager.py h i
+  script: ExecutePyimager/roles/Execute/templates/imager.py h i
+  args:
+    executable: python3
 ...
