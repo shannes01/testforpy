@@ -2,7 +2,7 @@
 
 - name: execute full script
   shell:
-    cmd: python3 imager.py {{ optie1|lower }} {{ optie2|lower }}
+    cmd: python3 ../templates/imager.py {{ optie1|lower }} {{ optie2|lower }}
   when: 
     - optie1 == "h" or optie1 == "f" or optie1 == "s" or optie1 == "H" or optie1 == "F" or optie1 == "S"
     - optie2 == "r" or optie2 == "i" or optie2 == "R" or optie2 == "I"

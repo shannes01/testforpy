@@ -1,0 +1,13 @@
+RaspianHeadlessImage='https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2022-01-28/2022-01-28-raspios-bullseye-arm64-lite.zip'
+RaspianFullImage='https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2021-05-28/2021-05-07-raspios-buster-arm64.zip'
+RaspianShowroomImage= 'https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2021-05-28/2021-05-07-raspios-buster-arm64.zip'
+raspianYumLinkHeadless = "http://yumrepo01.rad.priv.vangenechten.com/repos/iot/smartbox/smartfactory_headless.zip"
+raspianYumLinkFull = "http://yumrepo01.rad.priv.vangenechten.com/repos/iot/smartbox/smartfactory_full.zip"
+raspianYumLinkShowroom = "http://yumrepo01.rad.priv.vangenechten.com/repos/iot/smartbox/smartfactory_showroom.zip"
+YumRepoHost='yumrepo01.rad.priv.vangenechten.com'
+YumRepoRaspianLocation='/var/www/html/repos/iot/smartbox/'
+YumRepoBaseImageLocation='/var/www/html/repos/iot/smartbox/'
+YumUser='root'
+YumPW='jup1lerforce'
+LocalDownload='../download/'
+LocalBaseImage='../base_image/'
