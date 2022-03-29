@@ -1,4 +1,7 @@
 optie1: h
 optie2: i
-    
+LocalBaseImage: ../base_image/
+FullName: "smartfactory_full_"
+HeadlessName: "smartfactory_lite_"
+ImageName: ""
 

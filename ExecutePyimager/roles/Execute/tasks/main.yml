@@ -7,9 +7,23 @@
 #     - optie1 == "h" or optie1 == "f" or optie1 == "s" or optie1 == "H" or optie1 == "F" or optie1 == "S"
 #     - optie2 == "r" or optie2 == "i" or optie2 == "R" or optie2 == "I"
 
-- name: execute full script
-  command: python3 /home/brent/TestForAnsibleImager/testforpy/ExecutePyimager/roles/Execute/templates/imager.py h i 
+#- name: execute full script
+  #command: python3 /home/brent/TestForAnsibleImager/testforpy/ExecutePyimager/roles/Execute/templates/imager.py h i 
+
+- name: Get timestamp from the system
+  shell: "date +%Y-%m-%d%H-%M-%S"
+  register: tstamp
+
+- name: Set Variable for full
+  set_fact:
+    ImageName: "{{FullName}}{{tstamp.stdout[0:10]}}.img"
+  when: optie1 == "f" or optie1 == "F"
+
+- name: Set Variable for Headless
+  set_fact:
+    ImageName: "{{FullName}}{{tstamp.stdout[0:10]}}.img"
+  when: optie1 == "h" or optie1 == "H"
 
 - debug:
-      msg: "hello"
+    msg: "{{ImageName}}"
 ...
