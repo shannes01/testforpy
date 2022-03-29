@@ -21,7 +21,7 @@
 
 - name: Set Variable for Headless
   set_fact:
-    ImageName: "{{FullName}}{{tstamp.stdout[0:10]}}.img"
+    ImageName: "{{HeadlessName}}{{tstamp.stdout[0:10]}}.img"
   when: optie1 == "h" or optie1 == "H"
 
 - debug:
