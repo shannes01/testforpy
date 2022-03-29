@@ -24,6 +24,11 @@
     ImageName: "{{HeadlessName}}{{tstamp.stdout[0:10]}}.img"
   when: optie1 == "h" or optie1 == "H"
 
+- name: Check if image file exists
+  ansible.builtin.stat:
+    path: "{{ LocalBaseImage }}{{ ImageName }}"
+  register: check_file_image
+
 - debug:
     msg: "{{ImageName}}"
 ...
